@@ -14,6 +14,7 @@ English summary: A bilingual prompt-directing skill for AI-generated fight and a
 - 为 Seedance 生成连续的粗时间线
 - 为 MiniMax-H3 生成首尾衔接的精确时间码
 - 输出高强度、慢节奏和中间型三套动作方案
+- 提供标准版与极速版两档速度，极速版让三套强度方案同时变快
 - 管理角色数量、武器、弹药、运动方向和场景损伤的跨镜连续性
 - 提供动作、镜头和参考素材三类问题的单变量排错方法
 
@@ -25,6 +26,7 @@ English summary: A bilingual prompt-directing skill for AI-generated fight and a
 - Uses coarse continuous time blocks for Seedance
 - Uses contiguous precise timecodes for MiniMax-H3
 - Produces high-intensity, measured, and hybrid versions
+- Offers a standard and an ultra-fast speed setting, where ultra-fast speeds up all three versions
 - Tracks position, facing, weapons, projectiles, motion, and environmental damage across cuts
 - Diagnoses failures by changing one variable group at a time
 
@@ -96,6 +98,10 @@ This skill turns action into observable relationships. Each exchange identifies 
 3. 中间型版，兼顾交锋密度和动作中的表情、手部或武器特写
 
 用户指定单一强度时，只输出对应版本。
+
+速度是独立于强度的一档参数。默认标准版；选择极速版时，三套方案会使用更短的时间块、更多的微动作、更快的起手和更短的特写，但仍然只输出这三套方案。
+
+Speed is a separate axis from intensity. The default is standard; the ultra-fast setting shortens time blocks, adds micro-actions, starts the first effective action sooner, and cuts close-ups shorter across all three versions, without adding a fourth version.
 
 ## 安装
 
